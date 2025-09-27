@@ -58,6 +58,11 @@
     
     // TODO: Buat fungsi ubahHijau() untuk mengubah teks di elemen dengan id="teks" menjadi "Sekarang teks berwarna hijau!" 
     // dan warnanya menjadi hijau.
+    function ubahHijau() {
+      const teks = document.getElementById("teks");
+      teks.innerHTML = "Sekarang teks berwarna hijau!";
+      teks.style.color = "green";
+    }
 
     // Clue ketiga function diatas : gunakan document.getElementById, paragraf.innerHTML, dan paragraf.style.color
     
