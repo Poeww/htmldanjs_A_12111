@@ -42,6 +42,11 @@
   <script>
      // TODO: Buat fungsi ubahBiru() untuk mengubah teks di elemen dengan id="teks" menjadi "Teks sudah berubah menjadi biru!" 
      // dan warnanya menjadi biru.
+     function ubahBiru() {
+      const teks = document.getElementById("teks");
+      teks.innerHTML = "Teks sudah berubah menjadi biru!";
+      teks.style.color = "blue";
+     }
     
     // TODO: Buat fungsi ubahMerah() untuk mengubah teks di elemen dengan id="teks" menjadi "Sekarang teks berwarna merah!" 
     // dan warnanya menjadi merah.
