@@ -85,6 +85,16 @@
     // Jika ada isinya, hitung kuadrat angka tersebut dan tampilkan "Hasil kuadrat dari [angka] adalah [hasil]" 
     // di elemen dengan id="hasil".
     // Clue : gunakan document.getElementById("angka").value dan gunakan hasil.innerHTML.
+    function hitungKuadrat() {
+      const angka = document.getElementById("angka").value;
+      const hasil = document.getElementById("hasil");
+      if (angka === "") {
+        hasil.innerHTML = "Masukkan angka terlebih dahulu!";
+      } else {
+        const kuadrat = angka * angka;
+        hasil.innerHTML = "Hasil kuadrat dari " + angka + " adalah " + kuadrat;
+      }
+    }
   </script>
 </body>
 </html>
